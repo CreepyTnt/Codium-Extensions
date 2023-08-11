@@ -5,8 +5,13 @@ Automatically modifies VSCodium's product.json to use official VSCode extensions
 Simply download and run the file. If prompted, enter your username. 
 
 # Problems with Linux support
-1. For some reason, if you install VSCodium using snap, the file that this project modifies doesn't exsist. To fix this, install VSCodium using sudo apt. You can see instrucrtions on how to do this [here](https://vscodium.com/). Schroll down to the section titled "Install on Debian / Ubuntu (deb package)" I have not tested this on Arch Linux distros. 
-2. If you get a "permission denied" error, try runnning the program as sudo:
+1. For some reason, if you install VSCodium using snap, the file that this project modifies doesn't exsist. To fix this, install VSCodium using sudo apt.
+    ```bash
+   sudo apt update && sudo apt install codium
+   ```
+   
+3.  Schroll down to the section titled "Install on Debian / Ubuntu (deb package)" I have not tested this on Arch Linux distros. 
+4. If you get a "permission denied" error, try runnning the program as sudo:
 
 ``` bash
 sudo python3 "path/to/file"
