@@ -19,7 +19,7 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https:/
 ```bash
 sudo apt update && sudo apt install codium
 ```
-
+2. go to https://vscodium.com/
 
 3.  Schroll down to the section titled "Install on Debian / Ubuntu (deb package)" I have not tested this on Arch Linux distros. 
 4. If you get a "permission denied" error, try runnning the program as sudo:
