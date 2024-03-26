@@ -21,7 +21,11 @@ import os
 
 if platform.system() == "Windows":
     print("Windows")
-    usrnm = getpass.getuser()
+    usrnm = input('please enter your windows username or leave this blank to detect your username automatically > ')
+
+    if usrnm == '':
+        usrnm = getpass.getuser()
+    # print (usrnm)        
     if os.path.exists(f'C:\\Users\\{usrnm}\\AppData\\Local\\Programs\\VSCodium\\resources\\app\\product.json'):
         
         with open(f"C:\\Users\\{usrnm}\\AppData\\Local\\Programs\\VSCodium\\resources\\app\\product.json", 'r') as f:
